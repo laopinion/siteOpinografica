@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>opino-grafica</title>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <section id="menuRedes" class="container">
+      <div id="hamburger" onclick="menuOpen()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <img src="img/icons/logo.png" alt="opino-grafica" class="logoMenu">
+
+      <div id="menu">
+        <div class="publicidad">
+          <div class="title">
+            <i class="icon"></i>
+            <h2>Publicidad impresa</h2>
+          </div>
+          <hr class="line">
+        </div>
+
+        <div class="papeleria">
+          <div class="title">
+            <i class="icon"></i>
+            <h2>Papelería comercial</h2>
+          </div>
+          <hr class="line">
+        </div>
+
+        <div class="publicaciones">
+          <div class="title">
+            <i class="icon"></i>
+            <h2>Publicaciones</h2>
+          </div>
+          <hr class="line">
+        </div>
+        <div class="contactenos">
+          <div class="title">
+            <i class="icon"></i>
+            <h2 class="btnContatecnos">Contáctenos</h2>
+          </div>
+          <hr class="line">
+        </div>
+      </div>
+      <!-- Fin class menu -->
+
+      <ul class="redes">
+        <li class="facebook">
+          <a href="#facebook">
+            <aside class="fondo"></aside>
+          </a>
+        </li>
+        <li class="twitter">
+          <a href="#twitter">
+            <aside class="fondo"></aside>
+          </a>
+        </li>
+        <li class="instagram">
+          <a href="#instagram">
+            <aside class="fondo"></aside>
+          </a>
+        </li>
+        <li class="youtube">
+          <a href="#youtube">
+            <aside class="fondo"></aside>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </header>
+
+  {{{ body }}}
+  
+  <hr class="divisor">
+  <footer id="contactenos">
+    <section class="footer container">
+      <h2>Contáctenos</h2>
+      <div class="logos">
+        <img src="img/mapa.png" alt="mapa" class="mapa">
+        <span class="dir"><p>Av. 4 No. 16-48 B. La Playa Cúcuta, Colombia</p></span>
+        <span class="tel"><p>Conmutador (+57) (7) 571 0632</p></span>
+        <span class="mess"><p>opinografica@laopinion.com.co</p></span>
+      </div>
+      <div id="formulario">
+        <form action="">
+          <div class="campo">
+            <label for="nombre">Nombre completo*</label>
+            <input type="text" id="nombre">
+          </div>
+          <div class="campo">
+            <label for="pais">País & ciudad*</label>
+            <input type="text" id="pais">
+          </div>
+          <div class="campo">
+            <label for="correo">Correo electrónico*</label>
+            <input type="text" id="correo">
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" rows="8" cols="8"></textarea>
+          </div>
+          <button id="enviar">Enviar</button>
+        </form>
+      </div>
+      <p class="text">
+        OPINOGRÁFICA IMPRESORES S. A. - Av. 4 No. 16 - 48 B. La Playa. Cúcuta, Colombia. Teléfono (+57) (7) 5710632 – Copyright © 2001 - 2017 Opinográfica Impresores S.A. - Todos los Derechos Reservados 
+      </p>
+    </section>
+  </footer>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

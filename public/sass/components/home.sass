@@ -1,0 +1,1020 @@
+#sectionOne
+  margin-top: 50px
+  #logoP
+    background: url(../img/icons/logoText.svg) no-repeat
+    background-position: 50% 42px
+    height: 400px
+    position: relative
+    margin-bottom: 100px
+    width: 100%
+    .sombra
+      position: absolute
+      border-radius: 50%
+      transition: 2s
+      width: 200px
+      height: 200px
+      left: 0
+      right: 0
+      top: 32px
+      margin: 0 auto
+      animation: logoSombra 4s
+      -webkit-animation: logoSombra 4s
+      -moz-animation: logoSombra 4s
+      z-index: -1
+    &:hover
+      .sombra
+        -moz-box-shadow: 20px 15px 20px 14px rgba(51, 51, 51, 0.34)
+        -webkit-box-shadow: 20px 15px 20px 14px rgba(51, 51, 51, 0.34)
+        box-shadow: 20px 15px 20px 14px rgba(51, 51, 51, 0.34)
+    #ruedaColores
+      background: url(../img/icons/logoRueda.svg) no-repeat
+      background-position: 50% -5px
+      position: absolute
+      height: 252px
+      width: 300px
+      right: 0
+      left: 0
+      margin: 0 auto
+      cursor: pointer
+      transition: 2s
+      animation: logoRotar 4s
+      -webkit-animation: logoRotar 4s
+      -moz-animation: logoRotar 4s
+      // animation: logoRotar 4s infinite
+      &:hover
+        transform: rotate(180deg)
+        -webkit-transform: rotate(180deg)
+        -moz-transform: rotate(180deg)
+  .text
+    margin: 0 auto
+    width: 70%
+    h2
+      text-align: center
+      font-size: 2rem
+      font-weight: $fontLight
+      text-transform: uppercase
+      strong
+        border-bottom: 5px solid $rojoThree
+        padding: 0 5px
+        font-weight: $fontBold
+    p
+      text-align: justify
+      margin: 40px 0
+    p:first-letter
+      font-weight: $fontBold
+// Fin seccion one
+
+#sectionTwo
+  display: flex
+  display: -webkit-flex
+  display: -moz-flex
+  align-items: flex-end
+  -webkit-align-items: flex-end
+  -moz-align-items: flex-end
+  padding: 40px 0
+  box-sizing: border-box
+  margin: 110px 0 130px 0
+  height: 908px
+  background-color: $rojoFour
+  .typeProducts
+    display: flex
+    display: -webkit-flex
+    display: -moz-flex
+    justify-content: space-around
+    .publicidad, .papeleria, .publicaciones
+      height: 572px
+      h3
+        font-size: $fontSG
+        color: $blanco
+        text-transform: uppercase
+        text-align: center
+        margin-top: 20px
+        margin-bottom: 20px
+        width: 180px
+    .publicidad
+      .icon
+        background: url(../img/icons/iconMenuPublicidad.svg) no-repeat
+        background-size: 150px
+        display: block
+        margin: 0 auto
+        height: 162px
+        width: 150px
+      .list
+        display: none
+        list-style: none
+        padding: 0
+        margin: 0 auto
+        border-top: 1px solid $blanco
+        border-bottom: 1px solid $blanco
+        padding-top: 10px
+        padding-bottom: 10px
+        width: 180px
+        li
+          display: block
+          color: $blanco
+          cursor: pointer
+          padding-left: 5px
+          margin-bottom: 5px
+          border-left: 5px solid $rojoFour
+        .one
+          &:hover
+            border-left: 5px solid $amarillo
+        .two
+          &:hover
+            border-left: 5px solid $verdeClaro
+        .three
+          &:hover
+            border-left: 5px solid $verdeOscuro
+        .four
+          &:hover
+            border-left: 5px solid $celeste
+        .five
+          &:hover
+            border-left: 5px solid $azulOscuro
+        .six
+          &:hover
+            border-left: 5px solid $morado
+        .seven
+          &:hover
+            border-left: 5px solid $violeta
+        .eight
+          &:hover
+            border-left: 5px solid $rojoOne
+        .nine
+          &:hover
+            border-left: 5px solid $rojoTwo
+      &:hover
+        .list
+          display: block
+    // Fin publicidad
+    .papeleria
+      .icon
+        background: url(../img/icons/iconMenuPapelera.svg) no-repeat
+        background-size: 150px
+        display: block
+        margin: 0 auto
+        height: 162px
+        width: 150px
+      .list
+        display: none
+        list-style: none
+        padding: 0
+        margin: 0 auto
+        border-top: 1px solid $blanco
+        border-bottom: 1px solid $blanco
+        padding-top: 10px
+        padding-bottom: 10px
+        width: 180px
+        li
+          display: block
+          color: $blanco
+          cursor: pointer
+          padding-left: 5px
+          margin-bottom: 5px
+          border-left: 5px solid $rojoFour
+        .one
+          &:hover
+            border-left: 5px solid $amarillo
+        .two
+          &:hover
+            border-left: 5px solid $verdeClaro
+        .three
+          &:hover
+            border-left: 5px solid $verdeOscuro
+        .four
+          &:hover
+            border-left: 5px solid $celeste
+        .five
+          &:hover
+            border-left: 5px solid $azulOscuro
+        .six
+          &:hover
+            border-left: 5px solid $morado
+        .seven
+          &:hover
+            border-left: 5px solid $violeta
+        .eight
+          &:hover
+            border-left: 5px solid $rojoOne
+        .nine
+          &:hover
+            border-left: 5px solid $rojoTwo
+        .ten
+          &:hover
+            border-left: 5px solid $rojoThree
+        .eleven
+          &:hover
+            border-left: 5px solid $naranja
+        .twelve
+          &:hover
+            border-left: 5px solid $naranjaClaro
+      &:hover
+        .list
+          display: block
+    // Fin papeleria
+    .publicaciones
+      .icon
+        background: url(../img/icons/iconMenuPublicaciones.svg) no-repeat
+        background-size: 150px
+        display: block
+        margin: 0 auto
+        height: 162px
+        width: 150px
+      .list
+        display: none
+        list-style: none
+        padding: 0
+        margin: 0 auto
+        border-top: 1px solid $blanco
+        border-bottom: 1px solid $blanco
+        padding-top: 10px
+        padding-bottom: 10px
+        width: 180px
+        li
+          display: block
+          color: $blanco
+          cursor: pointer
+          padding-left: 5px
+          margin-bottom: 5px
+          border-left: 5px solid $rojoFour
+        .one
+          &:hover
+            border-left: 5px solid $amarillo
+        .two
+          &:hover
+            border-left: 5px solid $verdeClaro
+        .three
+          &:hover
+            border-left: 5px solid $verdeOscuro
+        .four
+          &:hover
+            border-left: 5px solid $celeste
+        .five
+          &:hover
+            border-left: 5px solid $azulOscuro
+        .six
+          &:hover
+            border-left: 5px solid $morado
+        .seven
+          &:hover
+            border-left: 5px solid $violeta
+        .eight
+          &:hover
+            border-left: 5px solid $rojoOne
+      &:hover
+        .list
+          display: block
+    // Fin publicaciones
+// Fin seccion two
+
+#sectionThree
+  .text
+    margin: 0 auto
+    width: 70%
+    h2
+      text-align: center
+      font-size: 2rem
+      font-weight: $fontLight
+      strong
+        border-bottom: 5px solid $celeste
+        padding: 0 5px
+        font-weight: $fontBold
+    p
+      text-align: left
+      margin: 40px 0
+    p:first-letter
+      font-weight: $fontBold
+  // Fin text
+  #productos
+    overflow: hidden
+    .row-1, .row-2, .row-3, .row-4, .row-5, .row-6, .row-7, .row-8, .row-9, .row-10, .row-11, .row-12, .row-13, .row-14
+      position: relative
+      display: flex
+      display: -webkit-flex
+      display: -moz-flex
+      align-items: center
+      -webkit-align-items: center
+      -moz-align-items: center
+      justify-content: space-around
+      -webkit-justify-content: space-around
+      -moz-justify-content: space-around
+      #cotizar
+        position: absolute
+        top: 1px
+        right: 5px
+        height: 35px
+        display: flex
+        display: -webkit-flex
+        display: -moz-flex
+        align-items: center
+        -webkit-align-items: center
+        -moz-align-items: center
+        justify-content: space-evenly
+        -webkit-justify-content: space-evenly
+        -moz-justify-content: space-evenly
+        background-color: #e0023f
+        text-transform: uppercase
+        cursor: pointer
+        font-size: 20px
+        width: 130px
+        z-index: 0
+        .icon
+          width: 15px
+          background-color: white
+          border-radius: 50%
+          display: flex
+          display: -webkit-flex
+          display: -moz-flex
+          height: 15px
+          align-items: center
+          -webkit-align-items: center
+          -moz-align-items: center
+          font-size: 18px
+          justify-content: center
+          -webkit-justify-content: center
+          -moz-justify-content: center
+          color: #e0023f
+        a
+          text-decoration: none
+          color: $blanco
+    .row-3, .row-4, .row-5, .row-6, .row-7, .row-8, .row-9, .row-10, .row-11, .row-12, .row-13, .row-14
+      #cotizar
+        right: 340px
+        z-index: 1
+    .row-1
+      border-bottom: 1px solid $naranja
+      .titleAgendas
+        transition: 3s
+        position: absolute
+        left: 40px
+        bottom: 0
+        background-color: $naranja
+        padding: 5px 10px
+        text-align: center
+        text-transform: uppercase
+        width: 150px
+      // .img-1
+      //   height: 288px
+      //   width: 305px
+      .img-2
+        &:hover
+          & ~ .titleAgendas
+            left: 40%
+      .img-3
+        &:hover
+          & ~ .titleAgendas
+            left: 80%
+    // Fin fila one
+    .row-2
+      margin-top: 50px
+      border-bottom: 1px solid $azul
+      .titleAnuarios
+        transition: 3s
+        position: absolute
+        left: 40px
+        bottom: 0
+        background-color: $azul
+        padding: 5px 10px
+        text-align: center
+        text-transform: uppercase
+        color: $blanco
+        width: 150px
+      img
+        object-fit: contain
+        height: 300px
+        width: 300px
+      .img-2
+        &:hover
+          & ~ .titleAnuarios
+            left: 40%
+      .img-3
+        &:hover
+          & ~ .titleAnuarios
+            left: 80%
+    // Fin fila two
+    .row-3
+      margin-top: 50px
+      border-bottom: 1px solid $verdeClaro
+      width: 1340px
+      .flechaProductosLeft, .flechaProductosRight
+        background-position: 50%
+        cursor: pointer
+        position: absolute
+        height: 30px
+        width: 45px
+        z-index: 1
+      .flechaProductosLeft
+        left: 0
+        display: none
+        background: url(../img/icons/btnProdLeft.svg) no-repeat
+      .flechaProductosRight
+        right: 335px
+        background: url(../img/icons/btnProdRight.svg) no-repeat
+      .titleCalendarios
+        transition: 3s
+        position: absolute
+        left: 40px
+        bottom: 0
+        background-color: $verdeClaro
+        padding: 5px 10px
+        text-align: center
+        text-transform: uppercase
+        width: 150px
+      img
+        position: relative
+        left: 0
+        transition: .2s ease-out
+        object-fit: contain
+        height: 300px
+        width: 300px
+      // .img-1
+      //   height: 324px
+      //   width: 245px
+      // .img-2
+      //   height: 324px
+      //   width: 245px
+      //   // &:hover
+      //   //   & ~ .titleCalendarios
+      //   //     left: 30%
+      // .img-3
+      //   height: 324px
+      //   width: 245px
+        // &:hover
+        //   & ~ .titleCalendarios
+        //     left: 55%
+    // Fin fila three
+    .row-4
+      margin-top: 50px
+      border-bottom: 1px solid $rojoOne
+      width: 1340px
+      .flechaProductosLeft, .flechaProductosRight
+        background-position: 50%
+        cursor: pointer
+        position: absolute
+        height: 30px
+        width: 45px
+        z-index: 1
+      .flechaProductosLeft
+        left: 0
+        display: none
+        background: url(../img/icons/btnProdLeft.svg) no-repeat
+      .flechaProductosRight
+        right: 335px
+        background: url(../img/icons/btnProdRight.svg) no-repeat
+      .titleCarpetas
+        transition: 3s
+        position: absolute
+        left: 40px
+        bottom: 0
+        background-color: $rojoOne
+        padding: 5px 10px
+        text-align: center
+        text-transform: uppercase
+        width: 150px
+      img
+        position: relative
+        left: 0
+        transition: .2s ease-out
+        object-fit: contain
+        height: 300px
+        width: 300px
+      // .img-1
+      //   height: 329px
+      //   width: 335px
+      // .img-2
+      //   height: 290px
+      //   width: 270px
+      //   // &:hover
+      //   //   & ~ .titleCatalogos
+      //   //     left: 40%
+      // .img-3
+      //   height: 290px
+      //   width: 270px
+      //   // &:hover
+      //   //   & ~ .titleCatalogos
+      //   //     left: 80%
+    // Fin fila four
+    .row-5
+      margin-top: 50px
+      border-bottom: 1px solid $violeta
+      width: 1340px
+      .flechaProductosLeft, .flechaProductosRight
+        background-position: 50%
+        cursor: pointer
+        position: absolute
+        height: 30px
+        width: 45px
+        z-index: 1
+      .flechaProductosLeft
+        left: 0
+        display: none
+        background: url(../img/icons/btnProdLeft.svg) no-repeat
+      .flechaProductosRight
+        right: 335px
+        background: url(../img/icons/btnProdRight.svg) no-repeat
+      img
+        position: relative
+        left: 470px
+        transition: .2s ease-out
+      .titleRevistas
+        transition: 3s
+        position: absolute
+        left: 40px
+        bottom: 0
+        background-color: $violeta
+        padding: 5px 10px
+        text-align: center
+        text-transform: uppercase
+        color: $blanco
+        width: 150px
+      // .img-1
+      //   height: 241px
+      //   width: 296px
+      // .img-2
+      //   height: 294px
+      //   width: 405px
+        // &:hover
+        //   & ~ .titleRevistas
+        //     left: 40%
+      // .img-3
+      //   height: 280px
+      //   width: 367px
+        // &:hover
+        //   & ~ .titleRevistas
+        //     left: 80%
+    // Fin fila five
+    .row-6
+      margin-top: 50px
+      border-bottom: 1px solid $rojoThree
+      width: 1340px
+      .flechaProductosLeft, .flechaProductosRight
+        background-position: 50%
+        cursor: pointer
+        position: absolute
+        height: 30px
+        width: 45px
+        z-index: 1
+      .flechaProductosLeft
+        left: 0
+        display: none
+        background: url(../img/icons/btnProdLeft.svg) no-repeat
+      .flechaProductosRight
+        right: 335px
+        background: url(../img/icons/btnProdRight.svg) no-repeat
+      img
+        position: relative
+        left: 470px
+        transition: .2s ease-out
+        margin: 0 25px
+      .titleMembretada
+        transition: 3s
+        position: absolute
+        left: 40px
+        bottom: 0
+        background-color: $rojoThree
+        padding: 5px 10px
+        text-align: center
+        text-transform: uppercase
+        color: $blanco
+        width: 150px
+    .row-7
+      margin-top: 50px
+      border-bottom: 1px solid $rojoFour
+      width: 1340px
+      .flechaProductosLeft, .flechaProductosRight
+        background-position: 50%
+        cursor: pointer
+        position: absolute
+        height: 30px
+        width: 45px
+        z-index: 1
+      .flechaProductosLeft
+        left: 0
+        display: none
+        background: url(../img/icons/btnProdLeft.svg) no-repeat
+      .flechaProductosRight
+        right: 335px
+        background: url(../img/icons/btnProdRight.svg) no-repeat
+      img
+        position: relative
+        left: 170px
+        transition: .2s ease-out
+        margin: 0 25px
+        object-fit: contain
+        height: 300px
+        width: 300px
+      .titleLibros
+        transition: 3s
+        position: absolute
+        left: 40px
+        bottom: 0
+        background-color: $rojoFour
+        padding: 5px 10px
+        text-align: center
+        text-transform: uppercase
+        color: $blanco
+        width: 150px
+    .row-8
+      margin-top: 50px
+      border-bottom: 1px solid $azulOscuro
+      width: 1340px
+      .flechaProductosLeft, .flechaProductosRight
+        background-position: 50%
+        cursor: pointer
+        position: absolute
+        height: 30px
+        width: 45px
+        z-index: 1
+      .flechaProductosLeft
+        left: 0
+        display: none
+        background: url(../img/icons/btnProdLeft.svg) no-repeat
+      .flechaProductosRight
+        right: 335px
+        background: url(../img/icons/btnProdRight.svg) no-repeat
+      img
+        position: relative
+        left: 0
+        transition: .2s ease-out
+        margin: 0 25px
+        object-fit: contain
+        height: 300px
+        width: 300px
+      .titleMiselaneas
+        transition: 3s
+        position: absolute
+        left: 40px
+        bottom: 0
+        background-color: $azulOscuro
+        padding: 5px 10px
+        text-align: center
+        text-transform: uppercase
+        color: $blanco
+        width: 150px
+    .row-9
+      margin-top: 50px
+      border-bottom: 1px solid $naranja
+      width: 1340px
+      .flechaProductosLeft, .flechaProductosRight
+        background-position: 50%
+        cursor: pointer
+        position: absolute
+        height: 30px
+        width: 45px
+        z-index: 1
+      .flechaProductosLeft
+        left: 0
+        display: none
+        background: url(../img/icons/btnProdLeft.svg) no-repeat
+      .flechaProductosRight
+        right: 335px
+        background: url(../img/icons/btnProdRight.svg) no-repeat
+      img
+        position: relative
+        left: 775px
+        transition: .2s ease-out
+        margin: 0 25px
+        object-fit: contain
+        height: 300px
+        width: 300px
+      .titlePeriodicos
+        transition: 3s
+        position: absolute
+        left: 40px
+        bottom: 0
+        background-color: $naranja
+        padding: 5px 10px
+        text-align: center
+        text-transform: uppercase
+        width: 150px
+    .row-10
+      margin-top: 50px
+      border-bottom: 1px solid $azul
+      width: 1340px
+      .flechaProductosLeft, .flechaProductosRight
+        background-position: 50%
+        cursor: pointer
+        position: absolute
+        height: 30px
+        width: 45px
+        z-index: 1
+      .flechaProductosLeft
+        left: 0
+        display: none
+        background: url(../img/icons/btnProdLeft.svg) no-repeat
+      .flechaProductosRight
+        right: 335px
+        background: url(../img/icons/btnProdRight.svg) no-repeat
+      img
+        position: relative
+        left: -140px
+        transition: .2s ease-out
+        // margin: 0 25px
+        // height: 300px
+        // width: 300px
+      .titleSeparatas
+        transition: 3s
+        position: absolute
+        left: 40px
+        bottom: 0
+        background-color: $azul
+        padding: 5px 10px
+        text-align: center
+        text-transform: uppercase
+        color: $blanco
+        width: 150px
+      .img-2
+        &:hover
+          & ~ .titleSeparatas
+            left: 30%
+      .img-3
+        &:hover
+          & ~ .titleSeparatas
+            left: 60%
+    .row-11
+      margin-top: 50px
+      border-bottom: 1px solid $verdeClaro
+      width: 1340px
+      .flechaProductosLeft, .flechaProductosRight
+        background-position: 50%
+        cursor: pointer
+        position: absolute
+        height: 30px
+        width: 45px
+        z-index: 1
+      .flechaProductosLeft
+        left: 0
+        display: none
+        background: url(../img/icons/btnProdLeft.svg) no-repeat
+      .flechaProductosRight
+        right: 335px
+        background: url(../img/icons/btnProdRight.svg) no-repeat
+      img
+        position: relative
+        left: 325px
+        transition: .2s ease-out
+        margin: 0 25px
+        object-fit: contain
+        height: 300px
+        width: 300px
+      .titleTroqueladas
+        transition: 3s
+        position: absolute
+        left: 40px
+        bottom: 0
+        background-color: $verdeClaro
+        padding: 5px 10px
+        text-align: center
+        text-transform: uppercase
+        width: 150px
+    .row-12
+      margin-top: 50px
+      border-bottom: 1px solid $azul
+      width: 1340px
+      .flechaProductosLeft, .flechaProductosRight
+        background-position: 50%
+        cursor: pointer
+        position: absolute
+        height: 30px
+        width: 45px
+        z-index: 1
+      .flechaProductosLeft
+        left: 0
+        display: none
+        background: url(../img/icons/btnProdLeft.svg) no-repeat
+      .flechaProductosRight
+        right: 335px
+        background: url(../img/icons/btnProdRight.svg) no-repeat
+      img
+        position: relative
+        left: 775px
+        transition: .2s ease-out
+        margin: 0 25px
+        object-fit: contain
+        height: 300px
+        width: 300px
+      .titlePlegables
+        transition: 3s
+        position: absolute
+        left: 40px
+        bottom: 0
+        background-color: $azul
+        padding: 5px 10px
+        text-align: center
+        text-transform: uppercase
+        color: $blanco
+        width: 150px
+    .row-13
+      margin-top: 50px
+      border-bottom: 1px solid $rojoOne
+      width: 1340px
+      .flechaProductosLeft, .flechaProductosRight
+        background-position: 50%
+        cursor: pointer
+        position: absolute
+        height: 30px
+        width: 45px
+        z-index: 1
+      .flechaProductosLeft
+        left: 0
+        display: none
+        background: url(../img/icons/btnProdLeft.svg) no-repeat
+      .flechaProductosRight
+        right: 335px
+        background: url(../img/icons/btnProdRight.svg) no-repeat
+      img
+        position: relative
+        left: 375px
+        transition: .2s ease-out
+        margin: 0 25px
+        object-fit: contain
+        height: 300px
+        width: 300px
+      .titleTarjetas
+        transition: 3s
+        position: absolute
+        left: 40px
+        bottom: 0
+        background-color: $rojoOne
+        padding: 5px 10px
+        text-align: center
+        text-transform: uppercase
+        width: 150px
+    .row-14
+      margin-top: 50px
+      border-bottom: 1px solid $violeta
+      width: 1340px
+      .flechaProductosLeft, .flechaProductosRight
+        background-position: 50%
+        cursor: pointer
+        position: absolute
+        height: 30px
+        width: 45px
+        z-index: 1
+      .flechaProductosLeft
+        left: 0
+        display: none
+        background: url(../img/icons/btnProdLeft.svg) no-repeat
+      .flechaProductosRight
+        right: 335px
+        background: url(../img/icons/btnProdRight.svg) no-repeat
+      img
+        position: relative
+        left: 0px
+        transition: .2s ease-out
+        margin: 0 25px
+        object-fit: contain
+        height: 300px
+        width: 300px
+      .titleVolantes
+        transition: 3s
+        position: absolute
+        left: 40px
+        bottom: 0
+        background-color: $violeta
+        padding: 5px 10px
+        text-align: center
+        text-transform: uppercase
+        color: $blanco
+        width: 150px
+      // .img-1
+      //   height: 296px
+      //   width: 382px
+      // .img-2
+      //   height: 255px
+      //   width: 269px
+      //   &:hover
+      //     & ~ .titleTarjetas
+      //       left: 40%
+      // .img-3
+      //   height: 255px
+      //   width: 322px
+      //   &:hover
+      //     & ~ .titleTarjetas
+      //       left: 80%
+    // Fin fila six
+// Fin secccion Three
+#sectionFour
+  overflow: hidden
+  margin-top: 100px
+  position: relative
+  .sombraLeft, .sombraRight
+    position: absolute
+    height: 100%
+    width: 100px
+    background-color: $blanco
+    top: 0
+    z-index: 1
+  .sombraLeft
+    left: -70px
+    box-shadow: 60px 0px 28px 20px rgba(255, 255, 255, 0.77)
+  .sombraRight
+    right: -70px
+    box-shadow: -60px 0px 28px 20px rgba(255,255,255,0.77)
+  .btnGirar
+    cursor: pointer
+    background: url(../img/icons/logoRuedaGaleria.png) no-repeat
+    background-size: 150px
+    position: absolute
+    bottom: 0
+    right: 160px
+    width: 150px
+    height: 150px
+    z-index: 2
+    transition: 2s
+  .textBtnGirar
+    background: url(../img/icons/btnGaleriaText.svg) no-repeat
+    background-size: 190px
+    position: absolute
+    bottom: -4px
+    right: 131px
+    width: 190px
+    height: 105px
+    z-index: 1
+  .text
+    margin: 0 auto
+    width: 70%
+    h2
+      text-align: center
+      font-size: 2rem
+      font-weight: $fontLight
+      strong
+        border-bottom: 5px solid $celeste
+        padding: 0 5px
+        font-weight: $fontBold
+  #galeria
+    display: flex
+    position: relative
+    margin: 80px auto
+    height: 457px
+    width: 688px
+    img
+      left: 0
+      margin-right: 20px
+      position: relative
+      transition: .3s
+      object-fit: cover
+  #galeriaMovil
+    display: none
+// Fin seccion four
+
+.divisor
+  border-top: 1px solid $grisOscuro
+  margin: 100px auto 5px auto
+  width: 600px
+
+@-webkit-keyframes logoRotar
+  0%
+    transform: rotate(0deg)
+    -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+  50%
+    transform: rotate(100deg)
+    -webkit-transform: rotate(100deg)
+    -moz-transform: rotate(100deg)
+  100%
+    transform: rotate(0deg)
+    -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+
+@keyframes logoRotar
+  0%
+    transform: rotate(0deg)
+    -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+  50%
+    transform: rotate(100deg)
+    -webkit-transform: rotate(100deg)
+    -moz-transform: rotate(100deg)
+  100%
+    transform: rotate(0deg)
+    -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+
+@-webkit-keyframes logoSombra
+  0%
+    box-shadow: initial
+    -moz-box-shadow: initial
+    -webkit-box-shadow: initial
+  50%
+    -moz-box-shadow: 20px 15px 20px 14px rgba(51, 51, 51, 0.34)
+    -webkit-box-shadow: 20px 15px 20px 14px rgba(51, 51, 51, 0.34)
+    box-shadow: 20px 15px 20px 14px rgba(51, 51, 51, 0.34)
+  100%
+    box-shadow: initial
+    -moz-box-shadow: initial
+    -webkit-box-shadow: initial
+
+@keyframes logoSombra
+  0%
+    box-shadow: initial
+    -moz-box-shadow: initial
+    -webkit-box-shadow: initial
+  50%
+    -moz-box-shadow: 20px 15px 20px 14px rgba(51, 51, 51, 0.34)
+    -webkit-box-shadow: 20px 15px 20px 14px rgba(51, 51, 51, 0.34)
+    box-shadow: 20px 15px 20px 14px rgba(51, 51, 51, 0.34)
+  100%
+    box-shadow: initial
+    -moz-box-shadow: initial
+    -webkit-box-shadow: initial
