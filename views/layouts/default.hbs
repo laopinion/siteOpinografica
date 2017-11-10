@@ -5,6 +5,8 @@
   <title>opino-grafica</title>
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/recaptcha.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
   <header>
@@ -18,7 +20,7 @@
         <span></span>
       </div>
 
-      <img src="img/icons/logo.png" alt="opino-grafica" class="logoMenu">
+      <a href="/"> <img src="img/icons/logo.png" alt="opino-grafica" class="logoMenu"> </a>
 
       <div id="menu">
         <div class="publicidad">
@@ -89,10 +91,10 @@
         <img src="img/mapa.png" alt="mapa" class="mapa">
         <span class="dir"><p>Av. 4 No. 16-48 B. La Playa Cúcuta, Colombia</p></span>
         <span class="tel"><p>Conmutador (+57) (7) 571 0632</p></span>
-        <span class="mess"><p>opinografica@laopinion.com.co</p></span>
+        <span class="mess"><p>info@opinografica.com</p></span>
       </div>
       <div id="formulario">
-        <form action="">
+        <form action="/contacto" method="post">
           <div class="campo">
             <label for="nombre">Nombre completo*</label>
             <input type="text" id="nombre">
@@ -109,6 +111,9 @@
             <label for="mensaje">Mensaje</label>
             <textarea id="mensaje" rows="8" cols="8"></textarea>
           </div>
+
+          <div class="g-recaptcha" data-sitekey="6Lel-zcUAAAAAOzn8rxELLujDY-30FL8qr_LaXIW" data-callback="onSubmit" data-size="invisible"> </div>
+
           <button id="enviar">Enviar</button>
         </form>
       </div>

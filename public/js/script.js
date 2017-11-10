@@ -434,9 +434,12 @@ function scrollIt(element) {
   });
 }
 
-const btnLogoMenu = document.querySelector('.logoMenu');
-const body = document.querySelector('body');
+// const btnLogoMenu = document.querySelector('.logoMenu');
+// const body = document.querySelector('body');
 
-btnLogoMenu.addEventListener('click', () => {
-  scrollIt(body);
-});
+// btnLogoMenu.addEventListener('click', () => {
+//   scrollIt(body);
+// });
+
+/* Codigo para validar y ejecutar reCAPTCHA */
+onload();
