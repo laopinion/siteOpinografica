@@ -94,26 +94,29 @@
         <span class="mess"><p>info@opinografica.com</p></span>
       </div>
       <div id="formulario">
-        <form action="/contacto" method="post">
+        <form id="formContacto" method="post">
           <div class="campo">
             <label for="nombre">Nombre completo*</label>
-            <input type="text" id="nombre">
+            <input type="text" id="nombre" name="nombre">
           </div>
           <div class="campo">
             <label for="pais">País & ciudad*</label>
-            <input type="text" id="pais">
+            <input type="text" id="pais" name="pais">
           </div>
           <div class="campo">
             <label for="correo">Correo electrónico*</label>
-            <input type="text" id="correo">
+            <input type="email" id="correo" name="correo">
           </div>
           <div class="campo">
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" rows="8" cols="8"></textarea>
+            <textarea id="mensaje" rows="8" cols="8" name="mensaje"></textarea>
           </div>
-
-          <div class="g-recaptcha" data-sitekey="6Lel-zcUAAAAAOzn8rxELLujDY-30FL8qr_LaXIW" data-callback="onSubmit" data-size="invisible"> </div>
-
+          
+          <div id='recaptcha' class="g-recaptcha"
+            data-sitekey="6Lel-zcUAAAAAOzn8rxELLujDY-30FL8qr_LaXIW"
+            data-callback="onSubmit"
+            data-size="invisible"></div>
+          <aside id="error"></aside>
           <button id="enviar">Enviar</button>
         </form>
       </div>

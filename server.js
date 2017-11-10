@@ -34,19 +34,20 @@ app.get('/cotizar', (req, res) => {
 
 app.post('/contacto', (req, res) => {
   const secretKey = process.env.SECRETKEYRECAPTCHA;
+  console.log(req.body)
   // req.connection.remoteAddress will provide IP address of connected user.
   // var verificationUrl = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
-  const verificationUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${req.body['g-recaptcha-response']}&remoteip=${req.connection.remoteAddress}`;
+  const verificationUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${req.body.token}&remoteip=${req.connection.remoteAddress}`;
   console.log(verificationUrl)
-  // request(verificationUrl, function(error, response, body) {
-  //   body = JSON.parse(body);
-  //   // Success will be true or false depending upon captcha validation.
-  //   if(body.success !== undefined && !body.success) {
-  //     return res.json({'responseCode' : 1,'responseDesc' : 'Failed captcha verification'});
-  //   }
+  request(verificationUrl, function(error, response, body) {
+    body = JSON.parse(body);
+    // Success will be true or false depending upon captcha validation.
+    if(body.success !== undefined && !body.success) {
+      return res.json({'responseCode' : 1,'responseDesc' : 'Failed captcha verification'});
+    }
 
-  //   res.json({'responseCode' : 0,'responseDesc' : 'Sucess'});
-  // });
+    res.json({'responseCode' : 0,'responseDesc' : 'Sucess'});
+  });
 });
 
 app.listen(8080, function () {
