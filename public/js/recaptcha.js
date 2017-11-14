@@ -1,5 +1,54 @@
 function onSubmit(token) {
-  alert('Gracias ' + document.getElementById('nombre').value);
+  // alert('Gracias ' + document.getElementById('nombre').value);
+
+  const formLogin = document.querySelector('#formContacto');
+  const formData = new FormData(formLogin);
+
+  // console.log('Esta es la data name -> '+ formData.get('nombre'));
+
+  console.log(`Este es el token response -> ${grecaptcha.getResponse()}`)
+
+  const data = JSON.stringify({
+    nombre: formData.get('nombre'),
+    pais: formData.get('pais'),
+    correo: formData.get('correo'),
+    mensaje: formData.get('mensaje'),
+    token: grecaptcha.getResponse()
+  });
+  
+  fetch('/contacto', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: data      
+  })
+  .then(function(res) {
+    return res.json();
+  })
+  .then(data => {
+    console.log('ok bien :D')
+    // Guardamos el token en localStorage
+    // console.log(`Esta es la data -> ${data}`)
+    console.log(`Esta es la data -> ${data.responseCode}`)
+    if (data.responseCode == 0) {
+      document.querySelector('footer #formulario').style.display = 'none';
+      const el = document.querySelector('footer .mensajeEnviado');
+      el.style.display = 'block';
+      el.textContent = 'Gracias por contactarse con nosotros.';
+    } else {
+      const el = document.querySelector('footer .mensajeEnviado');
+      el.style.display = 'block';
+      el.textContent = 'Algo salio mal inténtalo de nuevo gracias.'
+      setTimeout(function(){ 
+        document.querySelector('footer #formulario').style.display = 'block';
+        document.querySelector('footer .mensajeEnviado').style.display = 'none';
+      }, 2000);
+    }
+  })
+  .catch(err => {
+    console.log(`Algo salio mal -> ${err}`);
+  })
 }
 
 function validateEmail(valor) {
@@ -52,40 +101,6 @@ function validate(event) {
       document.getElementById('error').textContent = '';
 
       grecaptcha.execute();
-
-      const formLogin = document.querySelector('#formContacto');
-      const formData = new FormData(formLogin);
-
-      // const token = document.getElementById('recaptcha-token').value;
-      // console.log(`Este es el token -> ${token}`)
-      // console.log('Esta es la data name -> '+ formData.get('nombre'));
-
-      const data = JSON.stringify({
-        nombre: formData.get('nombre'),
-        pais: formData.get('pais'),
-        correo: formData.get('correo'),
-        mensaje: formData.get('mensaje'),
-        token: formData.get('g-recaptcha-response')
-      });
-      
-      fetch('/contacto', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: data      
-      })
-      .then(function(res) {
-        return res.json();
-      })
-      .then(data => {
-        console.log('ok bien :D')
-        // Guardamos el token en localStorage
-        console.log(`Esta es la data -> ${data}`)
-      })
-      .catch(err => {
-        console.log(`Algo salio mal -> ${err}`);
-      })
     }
   }
 }
