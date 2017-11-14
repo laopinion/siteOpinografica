@@ -442,4 +442,4 @@ function scrollIt(element) {
 // });
 
 /* Codigo para validar y ejecutar reCAPTCHA */
-onload();
+onload(); // Nota: la funcion esta en el file recaptcha.js
