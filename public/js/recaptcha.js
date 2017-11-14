@@ -5,8 +5,10 @@ function onSubmit(token) {
   const formData = new FormData(formLogin);
 
   // console.log('Esta es la data name -> '+ formData.get('nombre'));
+  // console.log(`Este es el token response -> ${grecaptcha.getResponse()}`)
 
-  console.log(`Este es el token response -> ${grecaptcha.getResponse()}`)
+  document.querySelector('footer #formulario').style.display = 'none';
+  document.querySelector('footer .spinner').style.display = 'block';
 
   const data = JSON.stringify({
     nombre: formData.get('nombre'),
@@ -27,12 +29,10 @@ function onSubmit(token) {
     return res.json();
   })
   .then(data => {
-    console.log('ok bien :D')
-    // Guardamos el token en localStorage
-    // console.log(`Esta es la data -> ${data}`)
-    console.log(`Esta es la data -> ${data.responseCode}`)
+    // console.log('ok bien :D')
+    // console.log(`Esta es la data -> ${data.responseCode}`)
     if (data.responseCode == 0) {
-      document.querySelector('footer #formulario').style.display = 'none';
+      document.querySelector('footer .spinner').style.display = 'none';
       const el = document.querySelector('footer .mensajeEnviado');
       el.style.display = 'block';
       el.textContent = 'Gracias por contactarse con nosotros.';
@@ -42,6 +42,7 @@ function onSubmit(token) {
       el.textContent = 'Algo salio mal inténtalo de nuevo gracias.'
       setTimeout(function(){ 
         document.querySelector('footer #formulario').style.display = 'block';
+        document.querySelector('footer .spinner').style.display = 'none';
         document.querySelector('footer .mensajeEnviado').style.display = 'none';
       }, 2000);
     }
@@ -52,7 +53,7 @@ function onSubmit(token) {
 }
 
 function validateEmail(valor) {
-  console.log(valor)
+  // console.log(valor)
   if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(valor)){
     return true;
   } else {
