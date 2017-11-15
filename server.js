@@ -82,6 +82,8 @@ app.post('/contacto', (req, res) => {
   });
 });
 
-app.listen(8080, function () {
-  console.log('Server listening on port 8080!');
+const port = process.env.PORT;
+
+app.listen(port, function () {
+  console.log(`Server listening on port ${port}!`);
 });
