@@ -297,9 +297,7 @@
   //     'top': element.offsetTop
   //   });
   // }
-
-  const btnContacto = document.querySelector('.btnContatecnos');
-  const sectionContactenos = document.querySelector('#contactenos');
+  
   const btnVolantes = document.querySelector('#sectionTwo .typeProducts .publicidad .one');
   const btnPlegables = document.querySelector('#sectionTwo .typeProducts .publicidad .two');
   const btnTroqueladas = document.querySelector('#sectionTwo .typeProducts .publicidad .seven');
@@ -330,11 +328,8 @@
   const seccionOtros = document.querySelector('#sectionThree #productos .row-8');
   const seccionSeparatas = document.querySelector('#sectionThree #productos .row-10');
 
-  btnContacto.addEventListener('click', () => {
-    scrollIt(sectionContactenos);
-  });
-
   btnVolantes.addEventListener('click', () => {
+    // La funcion scrollIt esta en el script.js
     scrollIt(seccionVolantes);
   });
 

@@ -407,25 +407,6 @@ function girar(){
   // }
 }
 
-/*const btns = document.querySelectorAll('.js-btn');
-const sections = document.querySelectorAll('.js-section');
-
-btns[0].addEventListener('click', () => {
-  scrollIt(sections[0]);
-});
-
-btns[1].addEventListener('click', () => {
-  scrollIt(sections[1]);
-});
-
-btns[2].addEventListener('click', () => {
-  scrollIt(sections[2]);
-});
-
-btns[3].addEventListener('click', () => {
-  scrollIt(sections[3]);
-});*/
-
 function scrollIt(element) {  
   window.scrollTo({
     'behavior': 'smooth',
@@ -440,6 +421,13 @@ function scrollIt(element) {
 // btnLogoMenu.addEventListener('click', () => {
 //   scrollIt(body);
 // });
+
+const btnContacto = document.querySelector('.btnContatecnos');
+const sectionContactenos = document.querySelector('#contactenos');
+
+btnContacto.addEventListener('click', () => {
+  scrollIt(sectionContactenos);
+});
 
 /* Codigo para validar y ejecutar reCAPTCHA */
 onload(); // Nota: la funcion esta en el file recaptcha.js
