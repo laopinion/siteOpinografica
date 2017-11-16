@@ -161,6 +161,7 @@ function rightImg(el) {
   }else if (row == 7) {
     document.querySelector('#sectionThree #productos .row-7 .flechaProductosLeft').style.display = 'block';
     array = document.querySelectorAll('#sectionThree #productos .row-7 img');    
+    document.querySelector('#sectionThree #productos .row-7 .translate').style.transform = 'translateX(-515px)';
   }else if (row == 8) {
     document.querySelector('#sectionThree #productos .row-8 .flechaProductosLeft').style.display = 'block';
     array = document.querySelectorAll('#sectionThree #productos .row-8 img');
@@ -168,16 +169,30 @@ function rightImg(el) {
     array = document.querySelectorAll('#sectionThree #productos .row-9 img');
     click++;
     el.dataset.click = click;
+    if (click == 1) {      
+      document.querySelector('#sectionThree #productos .row-9 .translate').style.transform = 'translateX(-200px)';
+    } else if (click == 2) {
+      document.querySelector('#sectionThree #productos .row-9 .translate').style.transform = 'translateX(-1235px)';
+      el.dataset.click = 0;
+    }
   }else if (row == 11) {
     document.querySelector('#sectionThree #productos .row-11 .flechaProductosLeft').style.display = 'block';
     array = document.querySelectorAll('#sectionThree #productos .row-11 img');
+    document.querySelector('#sectionThree #productos .row-11 .translate').style.transform = 'translateX(-690px)';
   }else if (row == 12) {
     array = document.querySelectorAll('#sectionThree #productos .row-12 img');
     click++;
     el.dataset.click = click;
+    if (click == 1) {      
+      document.querySelector('#sectionThree #productos .row-12 .translate').style.transform = 'translateX(-178px)';
+    } else if (click == 2) {
+      document.querySelector('#sectionThree #productos .row-12 .translate').style.transform = 'translateX(-1230px)';
+      el.dataset.click = 0;
+    }
   }else if (row == 13) {
     document.querySelector('#sectionThree #productos .row-13 .flechaProductosLeft').style.display = 'block';
     array = document.querySelectorAll('#sectionThree #productos .row-13 img');
+    document.querySelector('#sectionThree #productos .row-13 .translate').style.transform = 'translateX(-680px)';
   }else if (row == 14) {
     document.querySelector('#sectionThree #productos .row-14 .flechaProductosLeft').style.display = 'block';
     array = document.querySelectorAll('#sectionThree #productos .row-14 img');
@@ -187,7 +202,7 @@ function rightImg(el) {
     if (row != 7 && row != 6 && row != 5 && row != 9 && row != 11 && row != 12 && row != 13 && row != 14) {
       element.style.left = '-335px';
     } else if (row == 7) {
-      element.style.left = '-482px';
+      // element.style.left = '-482px';
     } else if (row == 6) {
       if (click == 2) {
         element.style.left = '-850px';
@@ -203,23 +218,23 @@ function rightImg(el) {
         element.style.left = '-500px';
       }
     } else if (row == 9) {
-      if (click == 2) {
-        element.style.left = '-1130px';
-        el.dataset.click = 0;
-      }else {
-        element.style.left = '-150px';
-      }
+      // if (click == 2) {
+      //   element.style.left = '-1130px';
+      //   el.dataset.click = 0;
+      // }else {
+      //   element.style.left = '-150px';
+      // }
     } else if (row == 11) {
-      element.style.left = '-712px';
+      // element.style.left = '-712px';
     }else if (row == 12) {
-      if (click == 2) {
-        element.style.left = '-1106px';
-        el.dataset.click = 0;
-      }else {
-        element.style.left = '-168px';
-      }
+      // if (click == 2) {
+      //   element.style.left = '-1106px';
+      //   el.dataset.click = 0;
+      // }else {
+      //   element.style.left = '-168px';
+      // }
     }else if (row == 13) {
-      element.style.left = '-680px';
+      // element.style.left = '-680px';
     }else if (row == 14) {
       element.style.left = '-355px';
     }
@@ -282,6 +297,7 @@ function leftImg(el){
   }else if (row == 7) {
     document.querySelector('#sectionThree #productos .row-7 .flechaProductosRight').style.display = 'block';
     array = document.querySelectorAll('#sectionThree #productos .row-7 img');
+    document.querySelector('#sectionThree #productos .row-7 .translate').style.transform = 'translateX(180px)';
   }else if (row == 8) {
     document.querySelector('#sectionThree #productos .row-8 .flechaProductosRight').style.display = 'block';
     array = document.querySelectorAll('#sectionThree #productos .row-8 img');
@@ -289,16 +305,30 @@ function leftImg(el){
     array = document.querySelectorAll('#sectionThree #productos .row-9 img');
     click++;
     el.dataset.click = click;
+    if (click == 1) {      
+      document.querySelector('#sectionThree #productos .row-9 .translate').style.transform = 'translateX(-200px)';
+    } else if (click == 2) {
+      document.querySelector('#sectionThree #productos .row-9 .translate').style.transform = 'translateX(865px)';
+      el.dataset.click = 0; 
+    }
   }else if (row == 11) {
     document.querySelector('#sectionThree #productos .row-11 .flechaProductosRight').style.display = 'block';
     array = document.querySelectorAll('#sectionThree #productos .row-11 img');
+    document.querySelector('#sectionThree #productos .row-11 .translate').style.transform = 'translateX(322px)'
   }else if (row == 12) {
     array = document.querySelectorAll('#sectionThree #productos .row-12 img');
     click++;
     el.dataset.click = click;
+    if (click == 1) {      
+      document.querySelector('#sectionThree #productos .row-12 .translate').style.transform = 'translateX(-178px)'
+    } else if (click == 2) {
+      document.querySelector('#sectionThree #productos .row-12 .translate').style.transform = 'translateX(868px)';
+      el.dataset.click = 0; 
+    }
   }else if (row == 13) {
     document.querySelector('#sectionThree #productos .row-13 .flechaProductosRight').style.display = 'block';
     array = document.querySelectorAll('#sectionThree #productos .row-13 img');
+    document.querySelector('#sectionThree #productos .row-13 .translate').style.transform = 'translateX(360px)';
   }else if (row == 14) {
     document.querySelector('#sectionThree #productos .row-14 .flechaProductosRight').style.display = 'block';
     array = document.querySelectorAll('#sectionThree #productos .row-14 img');
@@ -328,30 +358,30 @@ function leftImg(el){
       }
     }
 
-    if (row == 9){
-      if (click == 2) {
-        element.style.left = '775px';
-        el.dataset.click = 0; 
-      } else {
-        element.style.left = '-150px';
-      }
-    } 
+    // if (row == 9){
+    //   if (click == 2) {
+    //     element.style.left = '775px';
+    //     el.dataset.click = 0; 
+    //   } else {
+    //     element.style.left = '-150px';
+    //   }
+    // } 
 
-    if (row == 12){
-      if (click == 2) {
-        element.style.left = '775px';
-        el.dataset.click = 0; 
-      } else {
-        element.style.left = '-168px';
-      }
-    } 
+    // if (row == 12){
+    //   if (click == 2) {
+    //     element.style.left = '775px';
+    //     el.dataset.click = 0; 
+    //   } else {
+    //     element.style.left = '-168px';
+    //   }
+    // } 
 
     if (row == 7) {
-      element.style.left = '170px';
+      // element.style.left = '170px';
     }else if (row == 11) {
-      element.style.left = '325px';
+      // element.style.left = '325px';
     }else if (row == 13) {
-      element.style.left = '375px';
+      // element.style.left = '375px';
     }else if (row == 14) {
       element.style.left = '0';
     }
