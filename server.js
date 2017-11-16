@@ -67,7 +67,7 @@ app.post('/contacto', (req, res) => {
     };*/
     const data = {
       from: emailUser,
-      to: 'web@johnserrano.co',
+      to: 'info@opinografica.com',
       subject: 'Contacto opinografica web',
       html: htmlBody
     };
