@@ -445,6 +445,12 @@ function scrollIt(element) {
   });
 }
 
+// setTimeout(function () {
+//   girar();
+// }, 2000);
+
+setInterval(girar, 2000)
+
 // const btnLogoMenu = document.querySelector('.logoMenu');
 // const body = document.querySelector('body');
 
